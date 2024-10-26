@@ -36,7 +36,6 @@ def translate(word):
     try:
         # TDK sözlük sayfasına git
         driver.get("https://sozluk.gov.tr/")
-
         # Arama çubuğunu bul
         arama_cubugu = WebDriverWait(driver, 2).until(
             EC.presence_of_element_located((By.ID, "tdk-srch-input"))
